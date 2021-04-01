@@ -40,7 +40,7 @@
 }
 
 .venus-orbit {
-    margin: 70px auto 100px;
+    margin: 100px auto 100px;
     width: 300px;
     height: 300px;
     border-radius: 100%;
@@ -61,7 +61,7 @@
 }
 
 .earth-orbit {
-    margin: 40px auto 100px;
+    margin: 100px auto 100px;
     width: 420px;
     height: 420px;
     border-radius: 100%;
@@ -78,4 +78,56 @@
 #earth {
     animation: rotation 1s linear infinite;
     transform-origin: center;
+}
+.mars-orbit {
+    margin: 100px auto 100px;
+    width: 520px;
+    height: 520px;
+    border-radius: 100%;
+    border: 0.5px dotted rgba(0, 0, 255, 0.712);
+    position: absolute;
+    -webkit-animation: rotation 687s infinite linear;
+}
+
+.mars {
+    position: absolute;
+    left: 75px;
+    top: 30px;
+}
+
+#mars {
+    animation: rotation 2s linear infinite;
+    transform-origin: center;
+}
+
+.jupiter-orbit {
+    margin: 100px auto 100px;
+    width: 650px;
+    height: 650px;
+    border-radius: 100%;
+    border: 0.5px dotted rgba(0, 0, 255, 0.712);
+    position: absolute;
+    -webkit-animation: rotation 4320s infinite linear;
+}
+
+.jupiter {
+    position: absolute;
+    left: 75px;
+    top: 30px;
+}
+
+.uranus-orbit {
+    margin: 100px auto 100px;
+    width: 800px;
+    height: 800px;
+    border-radius: 100%;
+    border: 0.5px dotted rgba(0, 0, 255, 0.712);
+    position: absolute;
+    -webkit-animation: rotation 30240s infinite linear;
+}
+
+.uranus {
+    position: absolute;
+    left: 145px;
+    top: 30px;
 }
