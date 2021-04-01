@@ -1,0 +1,81 @@
+@import 'variables';
+@import 'globals';
+
+.mercury-orbit {
+    margin: 100px auto 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 0.5px dotted blue;
+    position: relative;
+    -webkit-animation: rotation 88s infinite linear;
+}
+
+
+.sun {
+    position: absolute;
+}
+#sun-shine {
+    animation: rotation 50s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes rotation {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+.mercury {
+    position: absolute;
+    left: 0px;
+    top: 30px;
+}
+#mercury {
+    animation: rotation 58s linear infinite;
+    transform-origin: center;
+}
+
+.venus-orbit {
+    margin: 70px auto 100px;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+    border: 0.5px dotted rgba(0, 0, 255, 0.712);
+    position: absolute;
+    -webkit-animation: rotation 225s infinite linear;
+}
+
+.venus {
+    position: absolute;
+    left: -11px;
+    top: 30px;
+}
+
+#venus {
+    animation: rotation 116s linear infinite;
+    transform-origin: center;
+}
+
+.earth-orbit {
+    margin: 40px auto 100px;
+    width: 420px;
+    height: 420px;
+    border-radius: 100%;
+    border: 0.5px dotted rgba(0, 0, 255, 0.712);
+    position: absolute;
+    -webkit-animation: rotation 120s infinite linear;
+}
+
+.earth {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+}
+#earth {
+    animation: rotation 1s linear infinite;
+    transform-origin: center;
+}

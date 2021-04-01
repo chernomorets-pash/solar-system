@@ -1,0 +1,124 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  background-color: black;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mercury-orbit {
+  margin: 100px auto 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 0.5px dotted blue;
+  position: relative;
+  -webkit-animation: rotation 88s infinite linear;
+}
+
+.sun {
+  position: absolute;
+}
+
+#sun-shine {
+  -webkit-animation: rotation 50s linear infinite;
+          animation: rotation 50s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  transform-box: fill-box;
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  to {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+.mercury {
+  position: absolute;
+  left: 0px;
+  top: 30px;
+}
+
+#mercury {
+  -webkit-animation: rotation 58s linear infinite;
+          animation: rotation 58s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.venus-orbit {
+  margin: 70px auto 100px;
+  width: 300px;
+  height: 300px;
+  border-radius: 100%;
+  border: 0.5px dotted rgba(0, 0, 255, 0.712);
+  position: absolute;
+  -webkit-animation: rotation 225s infinite linear;
+}
+
+.venus {
+  position: absolute;
+  left: -11px;
+  top: 30px;
+}
+
+#venus {
+  -webkit-animation: rotation 116s linear infinite;
+          animation: rotation 116s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.earth-orbit {
+  margin: 40px auto 100px;
+  width: 420px;
+  height: 420px;
+  border-radius: 100%;
+  border: 0.5px dotted rgba(0, 0, 255, 0.712);
+  position: absolute;
+  -webkit-animation: rotation 120s infinite linear;
+}
+
+.earth {
+  position: absolute;
+  left: 50px;
+  top: 30px;
+}
+
+#earth {
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+/*# sourceMappingURL=main.css.map */
